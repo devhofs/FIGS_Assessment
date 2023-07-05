@@ -1,0 +1,30 @@
+.tile {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    height: fit-content;
+
+    box-shadow: lightgray 0 0 5px 0;
+    display: grid;
+}
+
+.moreInfo {
+    margin-bottom: 0.5rem;
+}
+
+h2,p {
+    margin: 0;
+}
+
+img {
+    object-fit: cover;
+    height: auto;
+    border-radius: 0.5rem;
+    justify-self: center;
+}
+img.list {
+    width: 90vw;
+}
+img.grid {
+    width: 100%;
+}

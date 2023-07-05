@@ -1,0 +1,59 @@
+div.header {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem 2rem;
+  height: 3rem;
+  background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+}
+h1 {
+  margin: 0;
+}
+
+div.controlContainer {
+  padding: 0.5rem;
+  display: grid;
+  grid-auto-flow: row
+}
+.searchBar{
+  display: flex;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+}
+.searchBar-hidden {
+  display: none;
+}
+
+input[type="text"] {
+  margin: 0 4rem;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 1rem;
+
+  /*calculated value is minus height and padding of header */
+  height: calc(100vh - 5rem);
+  scrollbar-width: none;
+  overflow-x: scroll;
+}
+ul.showMoreInfo {
+  height: calc(100vh - 7.5rem);
+}
+ul.grid {
+  display: grid;
+  /*calculated value is minus height and padding of header AND search*/
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.sr-only{
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
